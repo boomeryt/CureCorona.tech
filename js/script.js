@@ -1,1 +1,19 @@
-;(doc => {const timeline = doc.querySelector('.timeline');const delta = timeline.dataset.delta || '150px';const items = [...timeline.getElementsByClassName('timeline__item')];const observer = new IntersectionObserver((entries, observer) => {entries.forEach(entry => {if (entry.isIntersecting){entry.target.classList.add('timeline__item--in-view');observer.unobserve(entry.target);}});}, {rootMargin: `0px 0px ${delta} 0px`,threshold: 0.5 });items.forEach(item => observer.observe(item));})(document);
+jQuery(document).ready(function($){
+	var $timeline_block = $('.cd-timeline-block');
+
+	//hide timeline blocks which are outside the viewport
+	$timeline_block.each(function(){
+		if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+			$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+		}
+	});
+
+	//on scolling, show/animate timeline blocks when enter the viewport
+	$(window).on('scroll', function(){
+		$timeline_block.each(function(){
+			if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+				$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+			}
+		});
+	});
+});
