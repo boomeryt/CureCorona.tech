@@ -60,11 +60,8 @@ Main components
 
 -------------------------------- */
 header {
-  border-radius:0.9rem; 
-  height: 50px;
-  line-height: 150px;
+    padding-top: 10px;
   text-align: center;
-  background: black;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -75,10 +72,6 @@ header h1 {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 1170px) {
-  header {
-    height: 100px;
-    line-height: 100px;
-  }
   header h1 {
     font-size: 24px;
     font-size: 1.5rem;
@@ -475,5 +468,5 @@ header h1 {
     padding: 35px;
 }
 .subFooter{
-    padding: 30px;
+    padding-bottom: 20px;
 }
