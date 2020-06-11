@@ -10,7 +10,8 @@ const template = `
             <a href="${el.find("link").text()}" target="_blank" rel="noopener">${el.find("title").text()}
             </a>
     </h3>
-${el.find("description").text()}
+<a href="${el.find("link").text()}" target="_blank" rel="noopener">${el.find("description").text()}
+</a>
 </div>
 <div class="point"></div>
     <div class="date">
