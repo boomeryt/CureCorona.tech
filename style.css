@@ -21,13 +21,7 @@ h1, h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
-header {
-  padding-top: 10px;
-  text-align: center;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-}
+
 .container {
    padding: 20px 0;
 }
