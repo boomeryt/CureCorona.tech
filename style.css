@@ -48,7 +48,7 @@ h1, h2 {
 .point {
     min-width: 20px;
     height: 20px;
-    background-color: red;
+    background-color: #11A7BB;
     border-radius: 100%;
     z-index: 2;
     border: 3px #333333 solid;
@@ -118,7 +118,7 @@ h1, h2 {
 }
 
 .timeline ul li .date h4 {
-    background-color: rgba(31, 31, 35, 0.8);
+    background-color: red;
     color: deeppink;
     width: 100px;
     text-align: center;
