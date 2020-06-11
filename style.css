@@ -54,7 +54,7 @@ header {
 .point {
     min-width: 20px;
     height: 20px;
-    background-color: deeppink;
+    background-color: blue;
     border-radius: 100%;
     z-index: 2;
     border: 3px #333333 solid;
