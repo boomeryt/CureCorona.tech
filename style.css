@@ -48,7 +48,7 @@ h1, h2 {
 .point {
     min-width: 20px;
     height: 20px;
-    background-color: #11A7BB;
+    background-color: #32CD32;
     border-radius: 100%;
     z-index: 2;
     border: 3px #333333 solid;
@@ -158,5 +158,5 @@ h1, h2 {
     height: 100%;
     width: 3px;
     left: 50%;
-    background-color: #32CD32;
+    background-color: #11A7BB;
 }
