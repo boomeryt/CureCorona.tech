@@ -118,8 +118,8 @@ h1, h2 {
 }
 
 .timeline ul li .date h4 {
-    background-color: red;
-    color: deeppink;
+    background-color: rgba(31, 31, 35, 0.8);
+    color: red;
     width: 100px;
     text-align: center;
     padding: 5px 10px;
