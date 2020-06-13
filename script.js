@@ -1,4 +1,4 @@
-const RSS_URL = `https://rss.app/feeds/edkxpmxhABkScYsd.xml`;
+const RSS_URL = `https://rss.app/feeds/8LPoDES48PyE0Sfm.xml`;
 
 $.ajax(RSS_URL,{accepts: {xml: "application/rss+xml"},
   dataType: "xml",success: function(data) {$(data).find("item").each(function() {const el = $(this);
